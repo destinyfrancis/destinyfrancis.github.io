@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TransferDock</title>
+  <meta name="description" content="TransferDock helps move large media batches from external storage to Google Drive with a clear, recoverable transfer queue.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f8fb;
+      --ink: #17202a;
+      --muted: #5f6c7b;
+      --line: #dce3ec;
+      --panel: #ffffff;
+      --accent: #16726b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101418;
+        --ink: #edf2f7;
+        --muted: #a6b2c0;
+        --line: #2a333d;
+        --panel: #161c22;
+        --accent: #62d6c8;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 56px 24px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 32px;
+      padding-bottom: 28px;
+    }
+    h1 {
+      font-size: clamp(2.25rem, 7vw, 4.5rem);
+      line-height: 1;
+      margin: 0 0 16px;
+      letter-spacing: 0;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 32px 0 8px;
+    }
+    p { margin: 0 0 16px; }
+    .lead {
+      color: var(--muted);
+      font-size: 1.18rem;
+      max-width: 680px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      margin: 24px 0;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    a {
+      color: var(--accent);
+      font-weight: 650;
+    }
+    nav a {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 14px;
+      text-decoration: none;
+      background: var(--panel);
+    }
+    footer {
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      margin-top: 40px;
+      padding-top: 18px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>TransferDock</h1>
+      <p class="lead">An iPad-first transfer utility for moving large media batches from external storage to Google Drive with a visible queue, resumable upload flow, and clear recovery actions.</p>
+      <nav aria-label="TransferDock links">
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+        <a href="mailto:attacloud@gmail.com">Support</a>
+      </nav>
+    </header>
+
+    <section class="panel">
+      <h2>What TransferDock Does</h2>
+      <p>TransferDock helps users choose files or folders, review a transfer batch, upload selected items to Google Drive, and recover safely if a connection, account, or storage issue interrupts the workflow.</p>
+      <p>The app requests Google Drive access only for files and folders used with TransferDock, using the Google Drive <code>drive.file</code> scope.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Support</h2>
+      <p>For help with TransferDock or account connection issues, contact <a href="mailto:attacloud@gmail.com">attacloud@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+      <p>Last updated: May 27, 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
